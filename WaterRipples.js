@@ -42,9 +42,6 @@ function canvasPressed()
   else
   {
     song.play();
-    
-    //capturer.start(); 
-    //draw();
   }
 }
 
@@ -77,13 +74,4 @@ function draw()
   {
     r.useFFT();
   }
-  
-  //capturer.capture(document.getElementById('defaultCanvas0'));
-  
-  /*if (frameCount == 1000) 
-  {
-    song.pause();
-    capturer.stop();
-    capturer.save();
-  }*/
 }
