@@ -5,6 +5,8 @@ let ripples = [];
 let count = 8; 
 let startAng = 0;
 
+let start = false;
+
 
 
 function preload() 
@@ -42,6 +44,7 @@ function canvasPressed()
   else
   {
     song.play();
+    start = true; //so initial instructions won't show again
   }
 }
 
@@ -50,7 +53,7 @@ function draw()
   background(240, 59, 20);
   noStroke();
   
-  if (!song.isPlaying())
+  if (!song.isPlaying() && start == false) //show instructions once 
   {
     textAlign(LEFT, TOP);
     fill(0, 0, 100);
