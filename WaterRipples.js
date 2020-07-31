@@ -43,7 +43,7 @@ function canvasPressed()
   }
   else
   {
-    song.play();
+    song.loop();
     start = true; //so initial instructions won't show again
   }
 }
